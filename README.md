@@ -32,7 +32,7 @@ The following is a screenshot of the TypeScript code edited with nano!
 <img src="https://l.top4top.io/p_2856jy6rp1.png" width="100%" alt="Screenshots 2"/>
 
 ## License
-TypeScript Nanorc is released under the AGPL-v3 license, which grants the following permissions:
+TypeScript Nanorc is released under the AGPL-3.0 license, which grants the following permissions:
 - Commercial use
 - Distribution
 - Modification
