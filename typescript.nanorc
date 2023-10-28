@@ -12,9 +12,9 @@ comment "//"
 color brightblue "\<(function|class|interface|type|import|export|default|from)\>"
 color brightred "\<(if|else|while|for|do|switch|case|break|continue)\>"
 color brightmagenta "\<(try|catch|finally|throw)\>"
-color lightgreen "\<(typeof|instanceof|async)\>"
-color brightcyan "\<(let|const|var|new)\>"
+color brightcyan "\<(let|const|var|new|enum)\>"
 color brightyellow "\<(class|interface|type|extends|implements)\>"
+color lightgreen "\<(as|keyof|typeof|instanceof|async|await)\>"
 # "Exit" points.
 color cyan "\<(break|continue|return|yield)\>"
 # Console statements.
@@ -23,13 +23,21 @@ color cyan "console\.(log|error|warn|info)"
 # Octal/decimal and hexadecimal numbers.
 color pink "\<([0-9]+|0x[[:xdigit:]]+)\>"
 # Special values.
-color lightcyan "\<(this|super|true|false|null|undefined|void)\>"
-color orange "\<(string|boolean|number|any)\>"
+color lightcyan "\<(this|super|true|false|null|undefined)\>"
+color orange "\<(string|boolean|number|any|void|unknown|never|object)\>"
 
-# Strings.
+# Strings capitalize letter.
 color blue "\<[A-Z][a-zA-Z0-9_]*\>"
+# Decorators.
+color brightcyan "@[a-zA-Z_][a-zA-Z0-9_]*"
+# Generics.
+color brightyellow "<[^>]*>"
+# Operators.
+color brightred "(&|\||\\|\+|\-|\*|\?|==|===|!|!=|<|>|!==|>=|<=|=>|\+=|\-=)"
+# Strings.
 color normal "\<[A-Z][A-Z0-9_]*\>"
 color brightmagenta ""([^"\]|\\.)*"|'([^'\]|\\.)*'|`([^`\]|\\.)*`"
+color brightcyan "\$\{[^\}]*\}"
 # Comments.
 color brightblack "(^|[[:blank:]])//.*"
 color brightblack start="/\*" end="\*/"
